@@ -1,8 +1,10 @@
 from brian2 import *
 import brian2genn
 
-set_device('genn', directory='simple_example')
+prefs.core.default_float_dtype = np.float32
 
+set_device('genn', directory='simple_example', use_GPU=False)
+BrianLogger.log_level_debug()
 N = 10000
 tau = 10*ms
 Iin = 0.11/ms 
