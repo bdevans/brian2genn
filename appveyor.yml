@@ -26,7 +26,7 @@ install:
   # Activate the conda environment
   - 'conda activate'
   # Install Brian 2 and dependencies
-  - 'conda install --yes --quiet -c conda-forge sympy=1.1 py-cpuinfo=3 nose'
+  - 'conda install --yes --quiet -c conda-forge sympy=1.1 py-cpuinfo=3 nose pip setuptools'
   - 'conda install --yes --quiet -c conda-forge --only-deps brian2'
   - 'pip install https://github.com/brian-team/brian2/archive/master.zip)'
   # Install GeNN
